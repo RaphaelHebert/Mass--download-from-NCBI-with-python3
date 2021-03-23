@@ -198,7 +198,7 @@ def completetaxo(idlist, QUERY, OPTIONS):
     #number of TaxIds to be sent to the API at once
     retmax = 100
     count = len(idlist)
-    if count % retmax == 0:
+    if count % retmax == 0:                                    
         nb = count//retmax
     else: 
         nb = (count//retmax) + 1
